@@ -17,7 +17,7 @@ class MuleSoftHero extends React.PureComponent {
     const { message } = this.props;
     return (
       <div className={styles.hero}>
-        <h2 className={styles.title}>{ message }</h2>
+        <h2 data-test-id="message-container" className={styles.title}>{ message }</h2>
         <Icon className={styles.logo} name="mulesoft-logo" size="m" />
       </div>
     );
